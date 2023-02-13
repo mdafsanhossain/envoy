@@ -22,6 +22,18 @@ config_setting(
     },
 )
 
+bool_flag(
+    name = "luajit2",
+    build_setting_default = False,
+)
+
+config_setting(
+    name = "with_luajit2",
+    flag_values = {
+        ":luajit2": "True",
+    },
+)
+
 envoy_cc_library(
     name = "lua_lib",
     srcs = ["lua.cc"],
