@@ -47,6 +47,7 @@ envoy_cc_library(
         "//source/common/protobuf",
     ] + select({
         ":with_moonjit": [envoy_external_dep_path("moonjit")],
+        ":with_luajit2": [envoy_external_dep_path("luajit2")],
         "//conditions:default": [envoy_external_dep_path("luajit")],
     }),
 )

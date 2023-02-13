@@ -181,6 +181,7 @@ def envoy_dependencies(skip_targets = []):
     _com_github_jbeder_yaml_cpp()
     _com_github_libevent_libevent()
     _com_github_luajit_luajit()
+    _com_github_luajit2_luajit2()
     _com_github_moonjit_moonjit()
     _com_github_nghttp2_nghttp2()
     _com_github_skyapm_cpp2sky()
