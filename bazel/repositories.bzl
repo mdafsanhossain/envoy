@@ -5,8 +5,6 @@ load("@envoy_api//bazel:external_deps.bzl", "load_repository_locations")
 load(":repository_locations.bzl", "REPOSITORY_LOCATIONS_SPEC")
 load("@com_google_googleapis//:repository_rules.bzl", "switched_rules_by_language")
 
-PPC_SKIP_TARGETS = ["envoy.filters.http.lua"]
-
 WINDOWS_SKIP_TARGETS = [
     "envoy.filters.http.language",
     "envoy.filters.http.sxg",
